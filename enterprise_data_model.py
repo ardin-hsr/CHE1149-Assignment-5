@@ -173,21 +173,6 @@ from datetime import datetime
 
 date.today()
 
-get_historical_data(datetime(2025, 11, 18, 9, 0, 0), datetime(2025, 11, 18, 10, 0, 0))
-
-#Plotting the Process Historian Data
-fig, axs = plt.subplots(3, 1, figsize=(15, 12))
-axs[0].plot(rw_df["Reactor_Temperature (C)"])
-axs[0].set_title("Reactor Temperature")
-axs[0].set_ylabel("Temperature (C)")
-axs[1].plot(rw_df["Reactor_Water_Content (%)"])
-axs[1].set_title("Reactor Water Content")
-axs[1].set_ylabel("Water Content (%)")
-axs[2].plot(rw_df["Reactor Pressure (kg/cm2g)"])
-axs[2].set_title("Reactor Pressure")
-axs[2].set_ylabel("Pressure (kg/cm2g)")
-plt.tight_layout()
-plt.show()
 
 def get_hazop_data():
     #Reading Safety HAZOP data from excel file
