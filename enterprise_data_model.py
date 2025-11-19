@@ -1,4 +1,4 @@
-def get_historical_data(self, start_time, end_time):
+def get_historical_data(start_time, end_time):
     """
     Generates simulated process historian data based on scraped book data.
 
