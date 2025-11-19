@@ -76,7 +76,7 @@ def get_historical_data(self, start_time, end_time):
 
     return rw_df
 
-def get_hazop_data():
+def get_hazop_data(self):
     #Reading Safety HAZOP data from excel file
     #Safety data helps with more sophisticated way to deal with missing values in a control system
     import requests
