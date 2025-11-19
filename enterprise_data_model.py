@@ -158,6 +158,7 @@ def get_historical_data(start_time, end_time):
         "Reactor Catalyst Flow (kg/h)": 0.01
     }
 
+    rw_df = pd.DataFrame()
     rw_df = pd.DataFrame([initial] * steps, index=time_index)
 
     # Apply cumulative random walk noise
